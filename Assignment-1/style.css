@@ -1,0 +1,81 @@
+.main-container{
+
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width:320px) {
+    .yellow-container .containt{
+        display: block;
+        height: 150px;
+        width: 96%;
+        background-color: rgb(240, 240, 18);
+        margin:19px;
+    }
+    .red-container{
+        height: 250px;
+        width: auto;
+        background-color: rgb(223, 119, 119);
+        margin:15px 20px;
+    
+    }
+    
+    .blue-container .containt{
+        display: block;
+        height:150px;
+        width:96%;
+        background-color: rgb(46, 46, 247);
+        margin: 21px;
+    }
+    
+}
+@media screen and (min-width:768px) {
+    .yellow-container .containt{
+        display: inline-block;
+        height: 150px;
+        width: 46%;
+        background-color: rgb(240, 240, 18);
+        margin:19px;
+    }
+    .red-container{
+        height: 250px;
+        width: auto;
+        background-color: rgb(223, 119, 119);
+        margin:15px 20px;
+    
+    }
+    
+    .blue-container .containt{
+        display: block;
+        height:150px;
+        width:96%;
+        background-color: rgb(46, 46, 247);
+        margin: 21px;
+    }
+    
+}
+@media screen and (min-width:1024px) {
+    .yellow-container .containt{
+        display: inline-block;
+        height: 250px;
+        width: 46%;
+        background-color: rgb(240, 240, 18);
+        margin:19px;
+    }
+    .red-container{
+        height: 350px;
+        width: auto;
+        background-color: rgb(223, 119, 119);
+        margin:15px 20px;
+    
+    }
+    
+    .blue-container .containt{
+        display: inline-block;
+        height:250px;
+        width:30%;
+        background-color: rgb(46, 46, 247);
+        margin: 18px;
+    }
+    
+}
