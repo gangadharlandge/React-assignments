@@ -1,0 +1,27 @@
+.container {
+  background-color: rgb(156, 93, 16);
+}
+h1{
+  margin-left: 100px;
+  color: aqua;
+}
+
+.profilePic {
+  text-align: center;
+  margin-left: 100px;
+  height: 200px;
+  width: 200px;
+  margin-top: 23px;
+  border-radius: 10px;
+  
+}
+label {
+  color: gray;
+  font-size: 10px;
+}
+li {
+  list-style: none;
+}
+form{
+  margin-left: 100px;
+}
