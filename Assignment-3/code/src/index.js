@@ -4,9 +4,20 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+const userDetails = {
+  customerName: "xyz",
+  email: "abc@gmail.com",
+  phone: "+263738492",
+  date:"10:30 (17-12-2021)",
+  status: "In progress",
+  door: "Mark",
+  companyName: "Alan Ford",
+  num: '00005152'
+}
+
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <App userDetails = {userDetails}/>
   </React.StrictMode>,
   document.getElementById('root')
 );
