@@ -1,20 +1,34 @@
-import React,{ useState } from 'react';
-import './Postview.css';
+import React from 'react';
+import './post.css';
 
 
-const Postview=()=> {
+const user = [
+  {"name":"Siva",
+  "location":"Bengaluru",
+  "likes":64,
+  "description": "Best friends always..!",
+  "PostImage": "https://webassets.oxfamamerica.org/media/images/bookshelf.2e16d0ba.fill-1180x738-c100.jpg",
+  "date": "12-12-2021"
+  },
+  {"name":"Neeraj",
+  "location":"Pune",
+  "likes":30,
+  "description": "Pic of the day",
+  "PostImage": "https://random.imagecdn.app/250/250",
+  "date":"12-1-2020"
+  },
+  {"name":"Rahul",
+  "location":"Hyderabad",
+  "likes":30,
+  "description": "Happy new year",
+  "PostImage": "https://wilstar.com/wp-content/uploads/2020/12/new-years-day-1-e1607420497339.jpg",
+  "date": "1-1-2018"
+  }
+  ]
 
-    const[posts, setPost] = useState([]);
+const post=()=> {
 
-
-
-    React.useEffect(()=>{
-
-    fetch("http://localhost:3004/user")
-    .then((res) => res.json())
-    .then((responseData) => setPost(responseData));
-    },[]);
-
+  
 
   return (
     <div className="site-container">
@@ -26,7 +40,7 @@ const Postview=()=> {
         
       </header>
     </div>
-      {posts.map((userDetails,index)=>{
+      {user.map((userDetails,index)=>{
         return(
         <div className="card">
           <div className="post-header">
@@ -56,4 +70,4 @@ const Postview=()=> {
   );
 }
 
-export default Postview;
+export default post;
